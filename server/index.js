@@ -25,6 +25,15 @@ app.use(cors({
     origin:"http://localhost:5173",
     credentials:true
 }));
+
+app.use(
+    cors({
+      origin: 'https://learnify-phi-seven.vercel.app', // Allowed frontend URL
+      methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+      credentials: true, // Agar cookies ya headers allow karne ho
+    })
+  );
+  
  
 // apis
 app.use("/api/v1/media", mediaRoute);
