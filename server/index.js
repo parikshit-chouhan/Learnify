@@ -38,7 +38,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "https://learnify-phi-seven.vercel.app",
-  "http://localhost:3000",
+  "http://localhost:5173",
 ];
 
 // Dynamic CORS configuration
